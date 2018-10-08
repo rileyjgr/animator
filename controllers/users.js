@@ -1,4 +1,5 @@
 const User = require('../models/users');
+const path = require("path");
 
 
 module.exports = {
@@ -56,10 +57,10 @@ module.exports = {
   profile: async (req, res, next) =>{
     const user = req.params.first;
     const foundUser = await User.findOne(user);
-    const page = require("../public/profile.html");
+    const page = res.sendFile(path.resolve(__dirname, "../public/profile.html"));
 
     if (foundUser) {
-      return res.sendFile(page);
+      return page;
 
     }
   }
