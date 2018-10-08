@@ -1,0 +1,156 @@
+// OFFSET FOR LOWER NAVBAR
+.navbar-fixed {
+	top:-64px;
+}
+.parallax-container {
+	height: 800px;
+}
+.parallax {
+	/* The image used */
+
+
+	/* Set a specific height */
+	height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax1 {
+	/* The image used */
+
+	background-image: url("https://i.ytimg.com/vi/7wWQ-0CKv1M/maxresdefault.jpg");
+
+	/* Set a specific height */
+	height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#img{height:353.5px;
+
+}
+.gif{ width:300px;
+	height:275px;}
+
+
+
+// NAVBAR TWEAK
+// Prevents content jump when navbar becomes fixed
+   .navbar-lower {
+@media only screen and (max-width: 600px) {height:49px;} // SMALL
+@media only screen and (min-width: 600px) and (max-width: 992px) {max-height:29px;} // MEDIUM
+@media only screen and (min-width: 993px) {height:112px;} // LARGE
+}
+
+// ADD SHADOW TO LOWER NAVBAR
+   .navbar-lower nav {
+   // Not working. Hmmm.
+   box-shadow:
+   0 2px 2px -2px rgba(0, 0, 0, 0.14),
+   0 1px 5px -2px rgba(0, 0, 0, 0.12),
+   0 3px 1px -2px  rgba(0, 0, 0, 0.2);
+   }
+
+
+// FIX NAVBAR TAB HEIGHT ISSUE AFTER SCROLL
+   .nav-extended {
+@media only screen and (max-width: 600px) {max-height:48px;} // SMALL
+@media only screen and (min-width: 600px) and (max-width: 992px) {max-height:48px;} // MEDIUM
+@media only screen and (min-width: 993px) {max-height:112px;} // LARGE
+}
+
+// FIX SIDEBAR'S OVERLAY ISSUE
+// Not working. Hmmm.
+   .side-nav {
+	   z-index:999;
+   }
+#sidenav-overlay {
+	z-index:800;
+}
+.navbar-fixed {
+	z-index:900;
+}
+
+
+// SMALL LOGO
+   nav .fadeInLogo {
+	   font-size: 2.5rem;
+	   font-weight: 900;
+	   color: #fff;
+	   text-transform: uppercase;
+	   float: left;
+	   display: none;
+   }
+
+// RESTYLE MATERIALIZE SEARCH INPUT
+   nav .input-field input[type=search] {
+	   width:0px;
+   }
+nav .input-field input[type=search]:focus {
+	width:320px;
+	color: transparent;                     // Remove blinking cursor 1/2
+text-shadow: 0 0 0 rgba(0, 0, 0, 0.87); // Remove blinking cursor 2/2
+}
+
+//CUSTOM ROW STYLE WITH NO CLEAR AFTER
+  .row-noclear:after {
+	  clear:none!important;
+  }
+
+// CUSTOM NAVBAR DROPDOWN SIZES
+   ul#dropdown1.dropdown-content {width:400px!important;}
+ul#dropdown1.dropdown-content:active {width:400px!important;}
+
+#photo-bg {
+	background-image: url(https://burst.shopifycdn.com/photos/country-cottage-sunset_925x.jpg);
+	background-size: cover;
+
+}
+
+// FIX SIDENAV SPACING
+   .side-nav li>a {
+	   padding: 0 16px;
+   }
+//FIX SIDEBAR DIVIDERS
+  .side-nav .divider {
+	  margin:0;
+	  height:8px;
+	  border-bottom:1px solid #e0e0e0;
+	  background-color: transparent;
+  }
+
+// SIDENAV HEADER
+   .sidenav-header {
+	   background: url("../images/user-bg.jpg") no-repeat center center;
+	   background-size: cover;
+	   margin-bottom: 0px;
+	   padding: 15px 0 0 15px;
+.row {
+	margin-bottom: 0;
+}
+}
+.sidenav-footer {
+	margin-bottom: 0px;
+	padding: 0;
+.row {
+	margin-bottom: 0;
+.social-icons {
+a {
+	opacity: 0.5;
+	padding: 0;
+	text-align:center;
+&:hover {
+	 background-color:inherit;
+	 opacity: 1;
+ }
+}
+}
+}
+}

@@ -1,0 +1,173 @@
+<head>
+	<style>
+			
+		/* the superGifCanvas elements can be styled if you need to*/
+
+        
+
+
+        .exampleimg {
+            max-width: 100%;
+        }
+
+  
+
+    
+
+        #ttsoptions {
+            position:absolute;
+            bottom: 0;
+            background-color: grey;
+        }
+
+        body {
+            background-image:url("americanflagbackground.jpg");
+            background-size: 100%;
+        }
+		
+		* {
+		    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ 
+		}
+		.guierrormessage {
+			color: #FF0000;
+		}
+		.guioption{
+			width: 280px;
+			padding: 0.2em;
+			font-size: 1em;
+			display: inline-block;
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1) inset;
+		}
+		#giferrormessage {
+			display: inline-block;
+		}
+
+
+		#newgifbutton {
+		font-size: 1.0rem;
+		padding: 0.5rem 0.6em;
+		background: #69c773;
+		border-bottom: 1px solid #498b50;
+		color: white;
+		-webkit-font-smoothing: antialiased;
+		font-weight: bold;
+		margin: 0;
+		height: 35px;
+		text-align: center;
+		}
+
+		#texttospeakinput {
+			width:96%;
+		}
+		.superGifCanvas{
+			
+		}
+    </style>
+
+
+            
+           
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Project 2</title>
+                <!-- Compiled and minified CSS -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            
+                <!-- Compiled and minified JavaScript -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                <!--Import Google Icon Font-->
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <!--Import materialize.css-->
+                <!-- <link rel="stylesheet" href="/static/material.css" media="screen,projection" /> -->
+                <!-- <link type="text/css" rel="stylesheet" href="style.css"> -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                
+                <!--Let browser know website is optimized for mobile-->
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+                <!-- <script src="main.js"></script> -->
+            </head>>
+            
+            <body>
+            
+            <div class="navbar-upper">
+                <nav class="z-depth-0">
+                    <div class="nav-wrapper">
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="#modal1" class="brand-logo" style="display:block;float:left;">Intellegent Man</a>
+                                <ul id="nav-mobile" class="right hide-on-med-and-down">
+            
+                                    <li>
+            
+                                        <form style="height:64px;">
+                                            <div class="input-field ">
+                                                <input id="search" type="search" required placeholder="Search">
+                                                <label class="label-icon" for="search"><i class="this material-icons">Wiki
+                                                    search</i></label>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+
+
+
+            <div id="imagePlayer">
+                    <a href="javascript:playsyncronized()">
+                        <div id="imagecontainer">
+
+                                <img id="exampleimg" src="https://media.giphy.com/media/dSdVdETkic9XKJGx01/giphy.gif" rel:animated_src="https://media.giphy.com/media/dSdVdETkic9XKJGx01/giphy.gif" rel:auto_play="0" width="720" height="510" />
+
+                            <!-- <img id="exampleimg" src="https://media.giphy.com/media/4N1KGCVsupMLGTQG2x/giphy.gif" rel:animated_src="https://media.giphy.com/media/4N1KGCVsupMLGTQG2x/giphy.gif" rel:auto_play="0" width="240" height="265" /> -->
+                        </a>        
+                        </div>
+            </div>
+                    
+                </div>
+
+                <div id="ttsoptions" style =" display: none" class="container white z-depth-2">
+                        <div style="visibility: hidden">
+                            <label>Voice:</label>
+                        <select id="voiceSelecter" class="guioption"></select>
+                    </div>
+                    <div>
+            
+                        <div id="texterrormessage" class="guierrormessage"></div>
+                    </div>
+                    <div style="visibility: hidden">
+                        <button id="newgifbutton">GIF</button>
+                        <input type="text" id="gifurlinput" value="https://media.giphy.com/media/4N1KGCVsupMLGTQG2x/giphy.gif" class="guioption" onClick="this.setSelectionRange(0, this.value.length)">
+                        <div id="giferrormessage" class="guierrormessage"></div>
+                    </div>
+                </div>
+                
+            
+
+
+            
+            
+
+
+           
+            
+            <!--JavaScript at end of body for optimized loading-->
+            <script type="text/javascript" src="playDialogue.js"></script>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <!-- <script src="/static/material.js"></script> -->
+            
+            </body>
+            
+            </html>
+
+
+            
+    </body>
+    </html>

@@ -1,0 +1,54 @@
+{
+  "name": "handlebars-boilerplate",
+  "version": "1.0.0",
+  "description": "Project 2 Starter",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "lint": "eslint **/*.js --quiet",
+    "fix": "eslint --fix .",
+    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-promise-router": "^3.0.3",
+    "joi": "^13.7.0",
+    "materialize-css": "^1.0.0",
+    "mongoose": "^5.3.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.5.3",
+    "node-wikipedia": "0.0.2",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7",
+    "say": "^0.15.0",
+    "socket.io": "^2.1.1",
+    "talkr-apng": "0.0.5",
+    "wikijs": "^4.8.1",
+    "wtf_wikipedia": "^6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.13.7"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jroze88/project-2.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Jroze88/project-2/issues"
+  },
+  "homepage": "https://github.com/Jroze88/project-2#readme"
+}

@@ -1,0 +1,229 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>
+    TTS GIF Example
+  </title>
+  <meta name="description" content="Playing Dialogue">
+  <script src="https://intelman.herokuapp.com/js/libgif.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Project 2</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://intelman.herokuapp.com/static/material.css" media="screen,projection" />
+  <!-- <link type="text/css" rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://intelman.herokuapp.com/static/css/styleSignin.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+</head>
+<style>
+
+  /* the superGifCanvas elements can be styled if you need to*/
+
+  .superGifCanvas {
+
+    position:absolute;
+    left:0;
+
+  }
+
+  .jsgif {
+    left:0;
+    width:50%;
+  }
+
+  .exampleimg {
+    position: relative;
+    width:50%;
+    left:0;
+  }
+
+  .exampleimg2 {
+    position: absolute;
+    width:50%;
+    left:0;
+  }
+
+  #imagePlayer {
+    display:inline-block;
+    left:0;
+    position:relative;
+  }
+
+  #ttsoptions {
+    position:absolute;
+    bottom: 0;
+    background-color: grey;
+  }
+
+  body {
+    background-color: grey;
+  }
+
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  }
+  .guierrormessage {
+    color: #FF0000;
+  }
+  .guioption{
+    width: 280px;
+    padding: 0.2em;
+    font-size: 1em;
+    display: inline-block;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1) inset;
+  }
+  #giferrormessage {
+    display: inline-block;
+  }
+  #newgifbutton {
+    font-size: 1.0rem;
+    padding: 0.5rem 0.6em;
+    background: #69c773;
+    border-bottom: 1px solid #498b50;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    margin: 0;
+    height: 35px;
+    text-align: center;
+  }
+  #texttospeakinput {
+    width:96%;
+  }
+  .superGifCanvas{
+    max-width: 80%;
+  }
+
+  #jsonobject {
+            
+            background-color:white;
+            display:inline-block;
+            
+        }
+
+</style>
+
+<body>
+  
+<div class="navbar-upper">
+    <nav class="z-depth-0 teal darken-2">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12">
+                    <a href="https://intelman.herokuapp.com" class="brand-logo" style="display:block;float:left;"><i style="font-size:45px;" class="material-icons">language</i>Intelman</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+
+                            <form style="height:64px;">
+                                <div class="input-field ">
+                                    <input id="search" type="search" required placeholder="Search">
+                                    <label class="label-icon" for="search"><i class="this material-icons">Wiki
+                                        search</i></label>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div id="imagePlayer">
+  <a href="javascript:playsyncronized()">
+    <div id="imagecontainer">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ELlqEp0z5wk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <!-- <img id="exampleimg" src="https://media.giphy.com/media/4N1KGCVsupMLGTQG2x/giphy.gif" rel:animated_src="https://media.giphy.com/media/4N1KGCVsupMLGTQG2x/giphy.gif" rel:auto_play="0" width="240" height="265" /> -->
+  </a>
+</div>
+
+<div id="jsonobject">
+  <h2>DataMuse API returns terms related to 'Pirate'</h2>
+    [
+{<br>
+"word": "pirate ship", <br>
+"score": 95192,<br>
+"tags": [<br>
+"syn",<br>
+"n"<br>
+]<br>
+},<br>
+{<br>
+"word": "buccaneer",<br>
+"score": 95002,<br>
+"tags": [<br>
+"syn",<br>
+"n"<br>
+]<br>
+},<br>
+{<br>
+"word": "hijack",<br>
+"score": 84335,<br>
+"tags": [<br>
+"syn",<br>
+"n"<br>
+]<br>
+},<br>
+{<br>
+"word": "commandeer",<br>
+"score": 83539,<br>
+"tags": [<br>
+"syn",<br>
+"v"<br>
+]<br>
+},<br>
+{<br>
+"word": "plagiarist",<br>
+"score": 82165,<br>
+"tags": [<br>
+"syn",<br>
+</div>
+
+<div id="ttsoptions" style =" display: none" class="container white z-depth-2">
+  <div style="visibility: hidden">
+    <label>Voice:</label>
+    <select id="voiceSelecter" class="guioption"></select>
+  </div>
+  <div>
+
+    <div id="texterrormessage" class="guierrormessage"></div>
+  </div>
+  <div style="visibility: hidden">
+    <button id="newgifbutton">GIF</button>
+    <input type="text" id="gifurlinput" value="https://media.giphy.com/media/4N1KGCVsupMLGTQG2x/giphy.gif" class="guioption" onClick="this.setSelectionRange(0, this.value.length)">
+    <div id="giferrormessage" class="guierrormessage"></div>
+  </div>
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://intelman.herokuapp.com/static/js/playDialogue.js"></script>
+<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+<!-- <script src="/static/material.js"></script> -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.tabs').tabs();
+  });
+</script>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src = "https://intelman.herokuapp.com/static/js/signup.js"></script>
+<!--Axios Cdn for the browser-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://intelman.herokuapp.com/static/material.js"></script>
+
+</body>
+
+</html>
