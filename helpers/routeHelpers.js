@@ -35,8 +35,8 @@ module.exports = {
       email: Joi.string()
         .email({ minDomainAtoms: 2 })
         .required(),
-      picture: Joi.string().regex(/^[\/A-Za-z.-:][\/A-Za-z0-9.-:]*$/),
-      desc: Joi.string().regex(/^[a-zA-Z0-9,. ]{3,255}$/)
+      picture: Joi.string(),
+      desc: Joi.string()
     }),
     aniSchema: Joi.object().keys({
       email: Joi.string()

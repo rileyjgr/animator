@@ -1,0 +1,139 @@
+<head>
+    <link rel="stylesheet" href="https://intelman.herokuapp.com/static/css/styleSignin.css">
+</head>
+<body>
+<div class="navbar-upper">
+    <nav class="z-depth-0 teal darken-2">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12">
+                    <a href="#modal1" class="brand-logo" style="display:block;float:left;"><i style="font-size:45px;" class="material-icons">language</i>Intelman</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+
+                            <form style="height:64px;">
+                                <div class="input-field ">
+                                    <input id="search" type="search" required placeholder="Search">
+                                    <label class="label-icon" for="search"><i class="this material-icons">Wiki
+                                        search</i></label>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+<div class="navbar-lower">
+    <nav class="z-depth-0 nav-extended teal darken-2">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12">
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active"><a href="#modal1">Login</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/trending">Trending</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<!-- SIGN IN PAGE -->
+<div class="container white z-depth-2">
+    <ul class="tabs teal">
+        <li class="tab col s3"><a class="white-text active" href="#login">login</a></li>
+        <li class="tab col s3"><a class="white-text" href="#register">register</a></li>
+    </ul>
+    <div id="login" class="col s12">
+        <form class="col s12" method="post" action="#">
+            <div class="form-container">
+                <h3 class="teal-text">Hello</h3>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button class="btn waves-effect waves-light teal" type="button" id="signIn">Connect</button>
+                    <br>
+                    <br>
+                    <a href="">Forgotten password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="register" class="col s12">
+        <form class="col s12" method="post" action="#">
+            <div class="form-container">
+                <h3 class="teal-text">Welcome</h3>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email_signup" type="email" class="validate">
+                        <label for="email_signup">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email-confirm" type="email" class="validate">
+                        <label for="email-confirm">Email Confirmation</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password_signup" type="password" class="validate">
+                        <label for="password_signup">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password-confirm" type="password" class="validate">
+                        <label for="password-confirm">Password Confirmation</label>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn waves-effect waves-light teal" type="button" id="sign-up" >Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $('.tabs').tabs();
+  });
+</script>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src = "https://intelman.herokuapp.com/static/js/signup.js"></script>
+<body>

@@ -5,10 +5,10 @@ const express = require("express");
 const html = (app) => {
   // Home page
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.render("home");
   });
   app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.render("login");
   });
 
   //search page

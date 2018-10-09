@@ -34,13 +34,13 @@ module.exports = {
       return res.status(403).json({error: "Email doesn't exist."});
     }
   },
-  addProfile: async (req, res, next) =>{
+  update: async (req, res, next) =>{
     const {email, password, pic, desc} = req.value.body;
 
     const foundUser = await User.findOne({email, password});
 
     if(foundUser) {
-      const newPicture = await User.update(foundUser, function (err, user) {
+      await User.update(foundUser, function (err, user) {
         user.picture = pic;
         user.desc = desc;
 
@@ -48,7 +48,9 @@ module.exports = {
           if (err) {
             console.log(err);
           }
+          res.json({user:"updated"});
         });
+
       });
     }
 
@@ -57,11 +59,8 @@ module.exports = {
   profile: async (req, res, next) =>{
     const user = req.params.first;
     const foundUser = await User.findOne(user);
-    const page = res.sendFile(path.resolve(__dirname, "../public/profile.html"));
-
     if (foundUser) {
-      return page;
-
+      return await res.render("profile");
     }
   }
 };

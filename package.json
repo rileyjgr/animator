@@ -24,6 +24,7 @@
     "node-wikipedia": "0.0.2",
     "nodemon": "^1.18.4",
     "path": "^0.12.7",
+    "react": "^16.5.2",
     "say": "^0.15.0",
     "socket.io": "^2.1.1",
     "talkr-apng": "0.0.5",
