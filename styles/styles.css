@@ -1,156 +1,514 @@
-// OFFSET FOR LOWER NAVBAR
+/* // OFFSET FOR LOWER NAVBAR */
 .navbar-fixed {
 	top:-64px;
-}
-.parallax-container {
-	height: 800px;
-}
-.parallax {
-	/* The image used */
-
-
-	/* Set a specific height */
-	height: 500px;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.parallax1 {
-	/* The image used */
-
-	background-image: url("https://i.ytimg.com/vi/7wWQ-0CKv1M/maxresdefault.jpg");
-
-	/* Set a specific height */
-	height: 500px;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#img{height:353.5px;
-
-}
-.gif{ width:300px;
-	height:275px;}
-
-
-
-// NAVBAR TWEAK
-// Prevents content jump when navbar becomes fixed
-   .navbar-lower {
-@media only screen and (max-width: 600px) {height:49px;} // SMALL
-@media only screen and (min-width: 600px) and (max-width: 992px) {max-height:29px;} // MEDIUM
-@media only screen and (min-width: 993px) {height:112px;} // LARGE
-}
-
-// ADD SHADOW TO LOWER NAVBAR
-   .navbar-lower nav {
-   // Not working. Hmmm.
-   box-shadow:
-   0 2px 2px -2px rgba(0, 0, 0, 0.14),
-   0 1px 5px -2px rgba(0, 0, 0, 0.12),
-   0 3px 1px -2px  rgba(0, 0, 0, 0.2);
-   }
-
-
-// FIX NAVBAR TAB HEIGHT ISSUE AFTER SCROLL
-   .nav-extended {
-@media only screen and (max-width: 600px) {max-height:48px;} // SMALL
-@media only screen and (min-width: 600px) and (max-width: 992px) {max-height:48px;} // MEDIUM
-@media only screen and (min-width: 993px) {max-height:112px;} // LARGE
-}
-
-// FIX SIDEBAR'S OVERLAY ISSUE
-// Not working. Hmmm.
-   .side-nav {
-	   z-index:999;
-   }
-#sidenav-overlay {
+  }
+  
+  
+  /* // NAVBAR TWEAK
+  // Prevents content jump when navbar becomes fixed */
+  .navbar-lower {
+  @media only screen and (max-width: 600px) {height:49px;} // SMALL
+  @media only screen and (min-width: 600px) and (max-width: 992px) {max-height:29px;} // MEDIUM
+  @media only screen and (min-width: 993px) {height:112px;} // LARGE
+  }
+  .gif{
+	width:800px;
+	height:302px;}
+  
+  /* // ADD SHADOW TO LOWER NAVBAR */
+  .navbar-lower nav {
+  // Not working. Hmmm.
+  box-shadow:
+  0 2px 2px -2px rgba(0, 0, 0, 0.14),
+  0 1px 5px -2px rgba(0, 0, 0, 0.12),
+  0 3px 1px -2px  rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* // FIX NAVBAR TAB HEIGHT ISSUE AFTER SCROLL */
+  .nav-extended {
+  @media only screen and (max-width: 600px) {max-height:48px;} // SMALL
+  @media only screen and (min-width: 600px) and (max-width: 992px) {max-height:48px;} // MEDIUM
+  @media only screen and (min-width: 993px) {max-height:112px;} // LARGE
+  }
+  
+  /* // FIX SIDEBAR'S OVERLAY ISSUE
+  // Not working. Hmmm. */
+  .side-nav {
+	z-index:999;
+  }
+  #sidenav-overlay {
 	z-index:800;
-}
-.navbar-fixed {
+  }
+  .navbar-fixed {
 	z-index:900;
-}
-
-
-// SMALL LOGO
-   nav .fadeInLogo {
-	   font-size: 2.5rem;
-	   font-weight: 900;
-	   color: #fff;
-	   text-transform: uppercase;
-	   float: left;
-	   display: none;
-   }
-
-// RESTYLE MATERIALIZE SEARCH INPUT
-   nav .input-field input[type=search] {
-	   width:0px;
-   }
-nav .input-field input[type=search]:focus {
+  }
+  
+  
+  /* // SMALL LOGO */
+  nav .fadeInLogo {
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: #fff;
+	text-transform: uppercase;
+	float: left;
+	display: none;
+  }
+  
+  /* // RESTYLE MATERIALIZE SEARCH INPUT */
+  nav .input-field input[type=search] {
+	width:0px;
+  }
+  nav .input-field input[type=search]:focus {
 	width:320px;
 	color: transparent;                     // Remove blinking cursor 1/2
-text-shadow: 0 0 0 rgba(0, 0, 0, 0.87); // Remove blinking cursor 2/2
-}
-
-//CUSTOM ROW STYLE WITH NO CLEAR AFTER
-  .row-noclear:after {
-	  clear:none!important;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.87); // Remove blinking cursor 2/2
   }
-
-// CUSTOM NAVBAR DROPDOWN SIZES
-   ul#dropdown1.dropdown-content {width:400px!important;}
-ul#dropdown1.dropdown-content:active {width:400px!important;}
-
-#photo-bg {
+  
+  /* //CUSTOM ROW STYLE WITH NO CLEAR AFTER */
+  .row-noclear:after {
+	clear:none!important;
+  }
+  
+  /* // CUSTOM NAVBAR DROPDOWN SIZES */
+  ul#dropdown1.dropdown-content {width:400px!important;}
+  ul#dropdown1.dropdown-content:active {width:400px!important;}
+  
+  #photo-bg {
 	background-image: url(https://burst.shopifycdn.com/photos/country-cottage-sunset_925x.jpg);
 	background-size: cover;
-
-}
-
-// FIX SIDENAV SPACING
-   .side-nav li>a {
-	   padding: 0 16px;
-   }
-//FIX SIDEBAR DIVIDERS
-  .side-nav .divider {
-	  margin:0;
-	  height:8px;
-	  border-bottom:1px solid #e0e0e0;
-	  background-color: transparent;
+  
   }
-
-// SIDENAV HEADER
-   .sidenav-header {
-	   background: url("../images/user-bg.jpg") no-repeat center center;
-	   background-size: cover;
-	   margin-bottom: 0px;
-	   padding: 15px 0 0 15px;
-.row {
+  
+  /* // FIX SIDENAV SPACING */
+  .side-nav li>a {
+	padding: 0 16px;
+  }
+  /* //FIX SIDEBAR DIVIDERS */
+  .side-nav .divider {
+	margin:0;
+	height:8px;
+	border-bottom:1px solid #e0e0e0;
+	background-color: transparent;
+  }
+  
+  /* // SIDENAV HEADER */
+  .sidenav-header {
+	background: url("../images/user-bg.jpg") no-repeat center center;
+	background-size: cover;
+	margin-bottom: 0px;
+	padding: 15px 0 0 15px;
+  .row {
 	margin-bottom: 0;
-}
-}
-.sidenav-footer {
+  }
+  }
+  .sidenav-footer {
 	margin-bottom: 0px;
 	padding: 0;
-.row {
+  .row {
 	margin-bottom: 0;
-.social-icons {
-a {
+  .social-icons {
+  a {
 	opacity: 0.5;
 	padding: 0;
 	text-align:center;
-&:hover {
+  &:hover {
 	 background-color:inherit;
 	 opacity: 1;
- }
-}
-}
-}
-}
+   }
+  }
+  }
+  }
+  }
+  
+  
+  /* //CUSTOM NAVBAR FOR BREADCRUMBS */
+  .nav-transparent {
+	background-color: transparent;
+	box-shadow: none;
+  }
+  
+  /* // DARK */
+  .nav-breadcrumbs-dark {
+  .breadcrumb {
+	color: rgba(0,0,0,0.5);
+  }
+  .breadcrumb:last-child {
+	color: rgba(0,0,0,1);
+  }
+  .breadcrumb:before {
+	color: rgba(0,0,0,0.2);
+  }
+  }
+  
+  
+  
+  ul {
+  &:not(.browser-default) {
+	 padding-left: 0px;
+	 list-style-type: none;
+  li {
+	list-style-type: none;
+  }
+  }
+  }
+  
+  
+  * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  /*custom font - Montserrat*/
+  @import url(http://fonts.googleapis.com/css?family=Montserrat);
+  /*basic reset*/
+  * {margin: 0; padding: 0;}
+  /*forcing the body to take 100% height*/
+  html, body {min-height: 100%;}
+  /*a nice BG*/
+  body {
+	  background:white; /*fallback*/
+	  background: linear-gradient(white);
+  }
+  
+  /*Thumbnail Background*/
+  .thumb {
+	  width: 300px; height: 275px; margin: 36px auto;
+	  perspective: 1000px;
+  }
+  .thumb1 a {
+	  display: block; width: 100%; height: 100%;
+	  /*double layered BG for lighting effect*/
+	  background: 
+		  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		  url("https://78.media.tumblr.com/0eea23feb5363b8096642ce3e7884530/tumblr_mz3bv9IaH11rju6z3o1_500.gif");
+	  /*disabling the translucent black bg on the main image*/
+	  background-size: 0, cover;
+	  /*3d space for children*/
+	  transform-style: preserve-3d;
+	  transition: all 0.5s;
+  }
+  .thumb1:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+  /*bottom surface */
+  .thumb1 a:after {
+	  /*36px high element positioned at the bottom of the image*/
+	  content: ''; position: absolute; left: 0; bottom: 0; 
+	  width: 100%; height: 36px;
+	  /*inherit the main BG*/
+	  background: inherit; background-size: cover, cover;
+	  /*draw the BG bottom up*/
+	  background-position: bottom;
+	  /*rotate the surface 90deg on the bottom axis*/
+	  transform: rotateX(90deg); transform-origin: bottom;
+  }
+  /*label style*/
+  .thumb1 a span {
+	  color: white; text-transform: uppercase;
+	  position: absolute; top: 100%; left: 0; width: 100%;
+	  font: bold 12px/36px Montserrat; text-align: center;
+	  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+	  transform: rotateX(-89.99deg); transform-origin: top;
+	  z-index: 1;
+  }
+  /*shadow*/
+  .thumb1 a:before {
+	  content: ''; position: absolute; top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background: rgba(0, 0, 0, 0.5); 
+	  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	  transition: all 0.5s; 
+	  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	  opacity: 0.15;
+	  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	  transform-origin: bottom;
+  }
+  .thumb1:hover a:before {
+	  opacity: 1;
+	  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	  /*pushing the shadow down and scaling it down to size*/
+	  transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  
+  .thumb2 a {
+	  display: block; width: 100%; height: 100%;
+	  /*double layered BG for lighting effect*/
+	  background: 
+		  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		  url("https://media.giphy.com/media/GT9BB2Zm4VnI4/giphy.gif");
+	  /*disabling the translucent black bg on the main image*/
+	  background-size: 0, cover;
+	  /*3d space for children*/
+	  transform-style: preserve-3d;
+	  transition: all 0.5s;
+  }
+  .thumb2:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+  /*bottom surface */
+  .thumb2 a:after {
+	  /*36px high element positioned at the bottom of the image*/
+	  content: ''; position: absolute; left: 0; bottom: 0; 
+	  width: 100%; height: 36px;
+	  /*inherit the main BG*/
+	  background: inherit; background-size: cover, cover;
+	  /*draw the BG bottom up*/
+	  background-position: bottom;
+	  /*rotate the surface 90deg on the bottom axis*/
+	  transform: rotateX(90deg); transform-origin: bottom;
+  }
+  /*label style*/
+  .thumb2 a span {
+	  color: white; text-transform: uppercase;
+	  position: absolute; top: 100%; left: 0; width: 100%;
+	  font: bold 12px/36px Montserrat; text-align: center;
+	  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+	  transform: rotateX(-89.99deg); transform-origin: top;
+	  z-index: 1;
+  }
+  /*shadow*/
+  .thumb2 a:before {
+	  content: ''; position: absolute; top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background: rgba(0, 0, 0, 0.5); 
+	  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	  transition: all 0.5s; 
+	  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	  opacity: 0.15;
+	  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	  transform-origin: bottom;
+  }
+  .thumb2:hover a:before {
+	  opacity: 1;
+	  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	  /*pushing the shadow down and scaling it down to size*/
+	  transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  
+  .thumb3 a {
+	  display: block; width: 100%; height: 100%;
+	  /*double layered BG for lighting effect*/
+	  background: 
+		  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		  url("https://78.media.tumblr.com/de57cf4154dd1ffafd47c6eb093e10ca/tumblr_o08je9zkhV1rp0vkjo1_500.gif");
+	  /*disabling the translucent black bg on the main image*/
+	  background-size: 0, cover;
+	  /*3d space for children*/
+	  transform-style: preserve-3d;
+	  transition: all 0.5s;
+  }
+  .thumb3:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+  /*bottom surface */
+  .thumb3 a:after {
+	  /*36px high element positioned at the bottom of the image*/
+	  content: ''; position: absolute; left: 0; bottom: 0; 
+	  width: 100%; height: 36px;
+	  /*inherit the main BG*/
+	  background: inherit; background-size: cover, cover;
+	  /*draw the BG bottom up*/
+	  background-position: bottom;
+	  /*rotate the surface 90deg on the bottom axis*/
+	  transform: rotateX(90deg); transform-origin: bottom;
+  }
+  /*label style*/
+  .thumb3 a span {
+	  color: white; text-transform: uppercase;
+	  position: absolute; top: 100%; left: 0; width: 100%;
+	  font: bold 12px/36px Montserrat; text-align: center;
+	  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+	  transform: rotateX(-89.99deg); transform-origin: top;
+	  z-index: 1;
+  }
+  /*shadow*/
+  .thumb3 a:before {
+	  content: ''; position: absolute; top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background: rgba(0, 0, 0, 0.5); 
+	  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	  transition: all 0.5s; 
+	  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	  opacity: 0.15;
+	  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	  transform-origin: bottom;
+  }
+  .thumb3:hover a:before {
+	  opacity: 1;
+	  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	  /*pushing the shadow down and scaling it down to size*/
+	  transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  
+  .thumb4 a {
+	  display: block; width: 100%; height: 100%;
+	  /*double layered BG for lighting effect*/
+	  background: 
+		  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		  url("https://media.giphy.com/media/12BlZ6ZBoyWGu4/giphy.gif");
+	  /*disabling the translucent black bg on the main image*/
+	  background-size: 0, cover;
+	  /*3d space for children*/
+	  transform-style: preserve-3d;
+	  transition: all 0.5s;
+  }
+  .thumb4:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+  /*bottom surface */
+  .thumb4 a:after {
+	  /*36px high element positioned at the bottom of the image*/
+	  content: ''; position: absolute; left: 0; bottom: 0; 
+	  width: 100%; height: 36px;
+	  /*inherit the main BG*/
+	  background: inherit; background-size: cover, cover;
+	  /*draw the BG bottom up*/
+	  background-position: bottom;
+	  /*rotate the surface 90deg on the bottom axis*/
+	  transform: rotateX(90deg); transform-origin: bottom;
+  }
+  /*label style*/
+  .thumb4 a span {
+	  color: white; text-transform: uppercase;
+	  position: absolute; top: 100%; left: 0; width: 100%;
+	  font: bold 12px/36px Montserrat; text-align: center;
+	  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+	  transform: rotateX(-89.99deg); transform-origin: top;
+	  z-index: 1;
+  }
+  /*shadow*/
+  .thumb4 a:before {
+	  content: ''; position: absolute; top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background: rgba(0, 0, 0, 0.5); 
+	  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	  transition: all 0.5s; 
+	  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	  opacity: 0.15;
+	  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	  transform-origin: bottom;
+  }
+  .thumb4:hover a:before {
+	  opacity: 1;
+	  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	  /*pushing the shadow down and scaling it down to size*/
+	  transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  
+  .thumb5 a {
+	  display: block; width: 100%; height: 100%;
+	  /*double layered BG for lighting effect*/
+	  background: 
+		  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		  url("https://media.giphy.com/media/xT77XKlezDkZXq7a2k/giphy.gif");
+	  /*disabling the translucent black bg on the main image*/
+	  background-size: 0, cover;
+	  /*3d space for children*/
+	  transform-style: preserve-3d;
+	  transition: all 0.5s;
+  }
+  .thumb5:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+  /*bottom surface */
+  .thumb5 a:after {
+	  /*36px high element positioned at the bottom of the image*/
+	  content: ''; position: absolute; left: 0; bottom: 0; 
+	  width: 100%; height: 36px;
+	  /*inherit the main BG*/
+	  background: inherit; background-size: cover, cover;
+	  /*draw the BG bottom up*/
+	  background-position: bottom;
+	  /*rotate the surface 90deg on the bottom axis*/
+	  transform: rotateX(90deg); transform-origin: bottom;
+  }
+  /*label style*/
+  .thumb5 a span {
+	  color: white; text-transform: uppercase;
+	  position: absolute; top: 100%; left: 0; width: 100%;
+	  font: bold 12px/36px Montserrat; text-align: center;
+	  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+	  transform: rotateX(-89.99deg); transform-origin: top;
+	  z-index: 1;
+  }
+  /*shadow*/
+  .thumb5 a:before {
+	  content: ''; position: absolute; top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background: rgba(0, 0, 0, 0.5); 
+	  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	  transition: all 0.5s; 
+	  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	  opacity: 0.15;
+	  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	  transform-origin: bottom;
+  }
+  .thumb5:hover a:before {
+	  opacity: 1;
+	  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	  /*pushing the shadow down and scaling it down to size*/
+	  transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  
+  .thumb6 a {
+	  display: block; width: 100%; height: 100%;
+	  /*double layered BG for lighting effect*/
+	  background: 
+		  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		  url("https://media.giphy.com/media/u69s4kogyFYly/giphy.gif");
+	  /*disabling the translucent black bg on the main image*/
+	  background-size: 0, cover;
+	  /*3d space for children*/
+	  transform-style: preserve-3d;
+	  transition: all 0.5s;
+  }
+  .thumb6:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+  /*bottom surface */
+  .thumb6 a:after {
+	  /*36px high element positioned at the bottom of the image*/
+	  content: ''; position: absolute; left: 0; bottom: 0; 
+	  width: 100%; height: 36px;
+	  /*inherit the main BG*/
+	  background: inherit; background-size: cover, cover;
+	  /*draw the BG bottom up*/
+	  background-position: bottom;
+	  /*rotate the surface 90deg on the bottom axis*/
+	  transform: rotateX(90deg); transform-origin: bottom;
+  }
+  /*label style*/
+  .thumb6 a span {
+	  color: white; text-transform: uppercase;
+	  position: absolute; top: 100%; left: 0; width: 100%;
+	  font: bold 12px/36px Montserrat; text-align: center;
+	  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+	  transform: rotateX(-89.99deg); transform-origin: top;
+	  z-index: 1;
+  }
+  /*shadow*/
+  .thumb6 a:before {
+	  content: ''; position: absolute; top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background: rgba(0, 0, 0, 0.5); 
+	  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	  transition: all 0.5s; 
+	  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	  opacity: 0.15;
+	  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	  transform-origin: bottom;
+  }
+  .thumb6:hover a:before {
+	  opacity: 1;
+	  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	  /*pushing the shadow down and scaling it down to size*/
+	  transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  .span{
+  
+	font-size: 50px;
+	letter-spacing: 5px;
+  }
+  
+  
+
+  
+  
+  
+  
+  
